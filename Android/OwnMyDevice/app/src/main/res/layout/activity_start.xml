@@ -1,0 +1,149 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.sap.ownmydevice.activities.StartActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#009688"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+        </android.support.v7.widget.Toolbar>
+        <!-- The Tab rests directly below the Toolbar, attached below it -->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/start_activity_progress"
+        android:layout_gravity="center"/>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp">
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/device_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_margin="12dp"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/device_os"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:textColor="#000"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/device_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:textColor="#000"
+                android:padding="8dp"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/device_id_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="8dp"
+                >
+                <EditText
+                    android:id="@+id/device_id_layout_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/equipment_id"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical"
+            >
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+    <Spinner
+        android:id="@+id/start_activity_team_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.ThemeOverlay.AppCompat"
+        android:textColor="#333"
+        android:visibility="gone"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <Spinner
+        android:id="@+id/start_activity_member_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:visibility="gone"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/set_owner"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="@string/set_owner"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
+</ScrollView>

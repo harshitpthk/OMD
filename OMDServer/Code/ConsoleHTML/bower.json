@@ -1,0 +1,25 @@
+{
+  "name": "Harshit Pathak",
+  "version": "0.0.1",
+  "description": "HTML Template for OMD",
+  "main": "index.html",
+  "keywords": [
+    "OMDConsole"
+  ],
+  "authors": [
+    "Harshit Pathak"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.0.8",
+    "core-elements": "Polymer/core-elements#~0.5.6",
+    "paper-elements": "Polymer/paper-elements#~0.5.6"
+  }
+}
